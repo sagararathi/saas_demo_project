@@ -5,7 +5,7 @@ if Rails.env.development?
     port:                 587,
     domain:               'saas-demo-project.herokuapp.com',
     user_name:            ENV["GMAIL_USERNAME"],
-    password:             ENV["GMAIL_PASS"],
+    password:             'saas$1234',
     authentication:       'plain',
     enable_starttls_auto: true  }
 elsif Rails.env.production?

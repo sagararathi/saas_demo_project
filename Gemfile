@@ -42,6 +42,15 @@ gem 'devise'
 
 # Awesome_gem is used for console butify output
 gem "awesome_print"
+
+# sidekiq for background processing
+gem "sidekiq"
+# Sending emails in background
+gem 'devise-async'
+
+# webserver
+gem 'puma'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
