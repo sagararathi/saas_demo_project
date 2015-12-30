@@ -5,9 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
   validate :email_is_unique, on: :create
   after_create :create_account
-  def confirmation_required?
-    false
-  end
 
   private
   def create_account
